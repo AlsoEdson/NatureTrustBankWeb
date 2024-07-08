@@ -15,7 +15,7 @@ app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, 'public', 'index.html'))
 });
 
-app.get("/descargar", function(request, response){
+app.get("/unirse", function(request, response){
     response.download(path.join(__dirname, 'apk', 'naturetrustbank.apk'))
 });
 
