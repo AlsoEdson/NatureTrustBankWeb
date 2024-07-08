@@ -23,9 +23,9 @@ app.get('/descargar', (request, response) => {
 
     // Configurar headers para la descarga
     response.setHeader('Content-Disposition', 'attachment; filename=naturetrustbank.apk');
-    response.sendFile(apkPath, (err) => {
+    response.download(apkPath, 'naturetrustbank.apk', (err) => {
         if (err) {
-            console.error('Error al enviar el archivo:', err);
+            console.error('Error al descargar el archivo:', err);
             response.status(err.status).end();
         } else {
             console.log('Se descargó el archivo');
