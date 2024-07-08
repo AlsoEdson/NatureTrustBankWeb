@@ -1,6 +1,6 @@
 /* ----- DOWNLOADS ----- */
 function descargarAPK() {
-    window.location.href = '/descargar';
+    window.location.href = '/unirse';
 }
 
 /* ----- NAVIGATION BAR FUNCTION ----- */
