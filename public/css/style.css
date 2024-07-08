@@ -541,6 +541,41 @@ footer{
     margin-top: 10px;
 }
 
+/* ----- MEDIA QUERY == 1440px / RESPONSIVE ----- */
+@media only screen and (max-width: 1440px){
+    .nav-link{
+        padding-inline: 8px;
+        margin-inline: 12px;
+    }
+    .featured-text-card span{
+        display: none;
+    }
+    .featured-text-info {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: var(--text-color-second);
+    }
+    .featured-name{
+        padding-top: 1rem;
+        font-size: 2.2rem;
+    }
+    .about-info .about-text{
+        font-size: 18px;
+        padding-top: 35px;
+    }
+    .image, .image img{
+        width: 420px;
+        height: 480px;
+    }
+    .project-box h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .contact-info p{
+        font-size: 0.8rem;
+    }
+}
+
 /* ----- MEDIA QUERY == 1280px / RESPONSIVE ----- */
 @media only screen and (max-width: 1280px){
     .nav-link{
@@ -557,15 +592,15 @@ footer{
     }
     .featured-name{
         padding-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
     .about-info .about-text{
         font-size: 18px;
         padding-top: 35px;
     }
     .image, .image img{
-        width: 320px;
-        height: 47vh;
+        width: 420px;
+        height: 480px;
     }
     .project-box h3{
         font-size: 1rem;
@@ -604,7 +639,7 @@ footer{
     }
     .image, .image img{
         width: 320px;
-        height: 47vh;
+        height: 360px;
     }
     .project-box h3{
         font-size: 1rem;
@@ -668,8 +703,8 @@ footer{
         margin-top: 65px;
     }
     .image, .image img{
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 200px;
     }
     .row{
         display: flex;
@@ -691,14 +726,17 @@ footer{
     .project-box{
         width: 80%;
     }
-
+    .about-img{
+        width: 500px;
+        height: 350px;
+    }
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
 @media only screen and (max-width: 540px){
     .featured-name{
-        font-size: 40px;
+        font-size: 30px;
     }
     .project-box{
         width: 100%;
@@ -708,5 +746,30 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+    .about-img{
+        width: 320px;
+        height: 210px;
+    }
+}
+
+/* ----- MEDIA QUERY == 425px / RESPONSIVE ----- */
+
+@media only screen and (max-width: 425px){
+    .featured-name{
+        font-size: 25px;
+    }
+    .project-box{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
+        width: 100%;
+    }
+    .about-img{
+        width: 280px;
+        height: 180px;
     }
 }
