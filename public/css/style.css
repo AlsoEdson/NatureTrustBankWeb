@@ -541,8 +541,8 @@ footer{
     margin-top: 10px;
 }
 
-/* ----- MEDIA QUERY == 1440px / RESPONSIVE ----- */
-@media only screen and (max-width: 1440px){
+/* ----- MEDIA QUERY == 1900px / RESPONSIVE ----- */
+@media only screen and (max-width: 1900px){
     .nav-link{
         padding-inline: 8px;
         margin-inline: 12px;
@@ -611,8 +611,8 @@ footer{
     }
 }
 
-/* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
-@media only screen and (max-width: 1024px){
+/* ----- MEDIA QUERY == 1130px / RESPONSIVE ----- */
+@media only screen and (max-width: 1130px){
     .nav-link{
         display: none;
     }
