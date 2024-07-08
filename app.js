@@ -5,7 +5,7 @@ const port = process.env.PORT || 4000
 
 
 //============== Routes ==================
-app.get('/', (requestuest, response) => {
+app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, 'public', 'index.html'))
 });
 
