@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const { request } = require('http');
 const app = express()
 const path = require('path')
 const port = process.env.PORT || 4000
@@ -14,24 +15,13 @@ app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, 'public', 'index.html'))
 });
 
-app.get("/hola", function(request, response){
+app.get("/descargar", function(request, response){
     response.download(path.join(__dirname, 'apk', 'naturetrustbank.apk'))
 });
 
-app.get('/descargar', (request, response) => {
-    const apkPath = path.join(__dirname, 'apk', 'naturetrustbank.apk');
-
-    // Configurar headers para la descarga
-    response.setHeader('Content-Disposition', 'attachment; filename=naturetrustbank.apk');
-    response.download(apkPath, 'naturetrustbank.apk', (err) => {
-        if (err) {
-            console.error('Error al descargar el archivo:', err);
-            response.status(err.status).end();
-        } else {
-            console.log('Se descargó el archivo');
-        }
-    });
-});
+app.get('/hola', (request, response) => {
+    response.sendFile(path.join(__dirname, 'public', 'hola.html'))
+})
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en el puerto: ${port}`)
