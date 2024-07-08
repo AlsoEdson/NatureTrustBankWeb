@@ -15,7 +15,7 @@ app.get('/', (request, response) => {
 });
 
 app.get("/hola", function(request, response){
-    response.send('Hola mundo')
+    response.download(path.join(__dirname, 'apk', 'naturetrustbank.apk'))
 });
 
 app.get('/descargar', (request, response) => {
