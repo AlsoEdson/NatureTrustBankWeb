@@ -14,11 +14,11 @@ app.use(express.json()); //Habilita el recibo de archivos json para su lectura e
 app.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, 'public', 'index.html'))
 });
-
+/*
 app.get("/unirse", function(request, response){
     response.download(path.join(__dirname, 'apk', 'naturetrustbank.apk'))
 });
-
+*/
 app.get('/hola', (request, response) => {
     response.sendFile(path.join(__dirname, 'public', 'hola.html'))
 })

@@ -1,6 +1,11 @@
 /* ----- DOWNLOADS ----- */
+/*
 function descargarAPK() {
     window.location.href = '/unirse';
+}
+*/
+function descargarAPK(){
+  window.location.href = 'https://www.mediafire.com/file/xzt3tkv5m89j0i3/naturetrustbank.apk/file'
 }
 
 /* ----- NAVIGATION BAR FUNCTION ----- */
